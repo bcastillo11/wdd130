@@ -9,6 +9,7 @@
 }
 
 .callout img {
+    box-sizing: border-box;
     float: right;
     margin: 10px;
     border: 1px solid #000;
