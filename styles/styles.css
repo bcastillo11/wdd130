@@ -29,7 +29,7 @@ p {
 }
 
 main {
-    width: 30rem;
+    max-width: 30rem;
 }
 
 aside {
