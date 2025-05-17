@@ -9,7 +9,7 @@
 }
 
 .callout img {
-    box-sizing: border-box;
+    
     float: right;
     margin: 10px;
     border: 1px solid #000;
@@ -31,4 +31,8 @@ cite {
     font-size: smaller;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
+
+a {
+    color:#bbb
 }
