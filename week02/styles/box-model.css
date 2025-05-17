@@ -30,9 +30,8 @@ cite {
     text-align: right;
     font-size: smaller;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
 }
 
-a {
-    background-color: #000;
+a:visited {
+    color: inherit;
 }
