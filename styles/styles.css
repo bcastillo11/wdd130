@@ -12,11 +12,11 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: #247;
 
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -25,5 +25,35 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
 }
+
+main {
+    max-width: 700px;
+}
+
+aside {
+    width:30rem;
+    margin:10px;
+    border: 1px;
+    padding: 10px;
+    /*background-color: #2c3e50; /* azul petróleo elegante */
+    /*color: #ecf0f1;/* gris muy claro / casi blanco */
+    background-color: #556b2f; /* verde oliva oscuro */
+    color: #f5f5dc;/* beige claro*/
+
+}
+
+aside img{
+    float: right;
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    border-top: #070303 dotted;
+    width: 700px;
+}
+
