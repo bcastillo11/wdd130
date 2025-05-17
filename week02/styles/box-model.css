@@ -9,7 +9,7 @@
 }
 
 .callout img {
-    
+
     float: right;
     margin: 10px;
     border: 1px solid #000;
@@ -30,9 +30,9 @@ cite {
     text-align: right;
     font-size: smaller;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    color: #fff;
 }
 
 a {
-    color:#bbb
+    background-color: #000;
 }
