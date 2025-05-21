@@ -1,12 +1,17 @@
+:root {
+    --main-background-color: #556b2f;
+    --main-text-background-color: #f5f5dc;
+}
+
 nav {
-    background-color: #556b2f; /* verde oliva oscuro */
+    background-color: var(--main-background-color); /* verde oliva oscuro */
     padding: 10px;
     justify-content: center;
     align-items: center;
 }
 
 nav a {
-    color: #f5f5dc;/* beige claro*/
+    color: var(--main-text-background-color); /* beige claro*/
     display: block;
     padding: 20px;
 }
@@ -37,8 +42,8 @@ aside {
     margin:10px;
     border: 1px;
     padding: 10px;
-    background-color: #556b2f; /* verde oliva oscuro */
-    color: #f5f5dc;/* beige claro*/
+    background-color: var(--main-background-color ); /* verde oliva oscuro */
+    color: var(--main-text-background-color)/* beige claro*/
 
 }
 
