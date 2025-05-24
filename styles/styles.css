@@ -3,15 +3,21 @@
     --main-text-background-color: #f5f5dc;
 }
 
-nav {
-    background-color: var(--main-background-color); /* verde oliva oscuro */
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav a {
-    color: var(--main-text-background-color); /* beige claro*/
+nav {
+    background-color: var(--main-background-color);
+    /* verde oliva oscuro */
+    padding: 10px;
+}
+
+a {
+    color: var(--main-text-background-color);
+    /* beige claro*/
     display: block;
     padding: 20px;
 }
@@ -22,35 +28,40 @@ h1 {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin-left: 10px;
 }
 
 p {
-    padding: 0;
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
 }
 
 main {
     max-width: 600px;
 }
 
-aside {
-    width:30rem;
-    margin:10px;
-    border: 1px;
-    padding: 10px;
-    background-color: var(--main-background-color ); /* verde oliva oscuro */
-    color: var(--main-text-background-color)/* beige claro*/
-
+aside { 
+    text-align: center;
+    position: relative;
 }
 
-aside img{
+aside img {
     float: right;
     width: 200px;
     height: auto;
+    margin-left: 10px;
+}
+
+aside h2 {
+    position: absolute;
+    right: 50px;
 }
 
 footer {
@@ -60,3 +71,18 @@ footer {
     width: 600px;
 }
 
+header {
+    width: 47vw;
+}
+
+
+/*Class Selectors*/
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #070303;
+    background-color: var(--main-background-color);
+    color: var(--main-text-background-color);
+    width: 47vw;
+}
