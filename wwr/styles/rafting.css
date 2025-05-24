@@ -4,7 +4,7 @@
     --accent1-color:#88D18A;
     --accent2-color:#F9E7E7;
     --text-light: #002914;
-    --text-dark: /*#F9E7E7;*/;
+    /* --text-dark: #F9E7E7; */
     --body-font:'Noto Sans', Arial, Helvetica, sans-serif;
     --header-font: 'Gowun Dodum', sans-serif;
 }
@@ -22,7 +22,7 @@ h1, h2, h3,h4, h5, h6 {
 
 body, p{
     font-family: var(--body-font);
-    color: var(--text-dark)
+    /* color: var(--text-dark) */
 }   
 
 header {
@@ -46,6 +46,20 @@ h1 {
     opacity: 0.85;
 }
 
+.hero article img{
+    float: right;
+    width: 125px;
+}
+
+.hero article {
+    position: absolute;
+    top:  90px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent2-color);
+    opacity: 0.75;
+}
+
 nav,
 p,
 section,
@@ -56,9 +70,25 @@ article {
 
 /* Class declarations */
 
-.socialmedia a {
+.socialmedia{
+    margin: 0;
+}
+
+.socialmedia a{
+    margin: 0 10px;
+    display: inline-block;
     text-decoration: none;
 }
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1); /* efecto hover */
+  }
 
 .hero {
     position: relative;
@@ -68,4 +98,10 @@ article {
     display: block;
     width: 100%;
     height: auto;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-align: center;
 }
