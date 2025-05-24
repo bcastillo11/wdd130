@@ -1,38 +1,38 @@
+
 :root {
     --primary-color: #335CD7;
-    --secondary-color:#002914;
-    --accent1-color:#88D18A;
-    --accent2-color:#F9E7E7;
-    --text-light: #002914;
-    /* --text-dark: #F9E7E7; */
-    --body-font:'Noto Sans', Arial, Helvetica, sans-serif;
+    --secondary-color: #002914;
+    --accent1-color: #88D18A;
+    --accent2-color: #F9E7E7;
+    --text-on-bright-bg: #000;
+    --body-font: 'Noto Sans', Arial, Helvetica, sans-serif;
     --header-font: 'Gowun Dodum', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--body-font);
+    color: var(--text-on-bright-bg);
+}
+
 h1, h2 {
     font-family: var(--header-font);
-    color: var(--text-light);
-  }
-
-body, p{
-    font-family: var(--body-font);
-    /* color: var(--text-dark) */
-}   
-
-header {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    color: var(--text-on-bright-bg);
 }
 
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-on-bright-bg);
 }
 
 h1 {
@@ -42,39 +42,44 @@ h1 {
     top: 20px;
     text-align: center;
     background-color: var(--secondary-color);
-    color: #F9E7E7; 
+    color: var(--accent2-color);
     opacity: 0.85;
 }
 
-.hero article img{
-    float: right;
-    width: 125px;
+.hero {
+    position: relative;
 }
 
 .hero article {
     position: absolute;
-    top:  90px;
+    top: 90px;
     left: 20px;
     right: 20px;
     background-color: var(--accent2-color);
     opacity: 0.75;
 }
 
-nav,
-p,
-section,
-article {
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+nav, section, article, p {
     padding: 8px;
     margin: 16px;
 }
 
-/* Class declarations */
-
-.socialmedia{
+.socialmedia {
     margin: 0;
 }
 
-.socialmedia a{
+.socialmedia a {
     margin: 0 10px;
     display: inline-block;
     text-decoration: none;
@@ -87,20 +92,10 @@ article {
 }
 
 .socialmedia img:hover {
-    transform: scale(1.1); /* efecto hover */
-  }
-
-.hero {
-    position: relative;
+    transform: scale(1.1);
 }
 
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-footer{
+footer {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     text-align: center;
