@@ -1,6 +1,21 @@
 :root {
     --main-background-color: #556b2f;
-    --main-text-background-color: #f5f5dc;
+    --main-text-color: #f5f5dc;
+    --primary-color: #335CD7;
+    --secondary-color:#002914;
+    --accent1-color:#88D18A;
+    --accent2-color:#F9E7E7;
+    --text-light: #F9E7E7;
+    --text-dark: #002914;
+
+}
+
+h1, h2, h3,h4, h5, h6 {
+    font-family: 'Gowun Dodum', sans-serif;
+  }
+
+body, p{
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
 *{
@@ -11,15 +26,22 @@
 
 nav {
     background-color: var(--main-background-color);
-    /* verde oliva oscuro */
+    color: var(--main-text-color);
     padding: 10px;
 }
 
-a {
-    color: var(--main-text-background-color);
-    /* beige claro*/
-    display: block;
+nav a{
+    color: inherit;
+}
+
+a, 
+nav a,
+nav a:visited,
+a:visited {
+    /* display: block; */
     padding: 20px;
+    color: inherit;
+    line-height: 1.5rem;
 }
 
 h1 {
@@ -61,7 +83,7 @@ aside img {
 aside h2 {
     position: absolute;
     left:50%;
-    transform: translateX(-50%);
+    transform: translateX(-50);
 }
 
 footer {
@@ -86,8 +108,8 @@ li {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #070303;
-    background-color: var(--main-background-color);
-    color: var(--main-text-background-color);
+    background-color: var(--main-background-color); 
+    color: var(--main-text-color);
     width: 47vw;
 }
 

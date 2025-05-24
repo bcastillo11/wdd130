@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #335CD7;
+    --secondary-color:#002914;
+    --accent1-color:#88D18A;
+    --accent2-color:#F9E7E7;
+    --text-light: #002914;
+    --text-dark: /*#F9E7E7;*/;
+    --body-font:'Noto Sans', Arial, Helvetica, sans-serif;
+    --header-font: 'Gowun Dodum', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3,h4, h5, h6 {
+    font-family: var(--header-font);
+    color: var(--text-light);
+  }
+
+body, p{
+    font-family: var(--body-font);
+    color: var(--text-dark)
+}   
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+    top: 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #F9E7E7; 
+    opacity: 0.85;
+}
+
+nav,
+p,
+section,
+article {
+    padding: 8px;
+    margin: 16px;
+}
+
+/* Class declarations */
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
