@@ -5,6 +5,7 @@
     --accent1-color: #88D18A;
     --accent2-color: #F9E7E7;
     --text-on-bright-bg: #000;
+    --text-on-dark-bg: #F9E7E7;
     --body-font: 'Noto Sans', Arial, Helvetica, sans-serif;
     --header-font: 'Gowun Dodum', sans-serif;
 }
@@ -32,7 +33,13 @@ header, main, footer {
 
 header {
     background-color: var(--primary-color);
-    color: var(--text-on-bright-bg);
+    color: var(--text-on-dark-bg);
+}
+
+header a{
+    color: inherit;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 h1 {
