@@ -107,3 +107,19 @@ footer {
     color: var(--accent2-color);
     text-align: center;
 }
+
+.adventureawaits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10 px;
+    margin: 10px;
+    background-color: var(--accent1-color);
+}
+
+.adventureawaits img{
+    width: 350px;
+    height: auto;
+    margin: 10px;
+}
+

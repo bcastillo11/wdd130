@@ -2,51 +2,68 @@
     --main-background-color: #556b2f;
     --main-text-color: #f5f5dc;
     --primary-color: #335CD7;
-    --secondary-color:#002914;
-    --accent1-color:#88D18A;
-    --accent2-color:#F9E7E7;
+    --secondary-color: #002914;
+    --accent1-color: #88D18A;
+    --accent2-color: #F9E7E7;
     --text-light: #F9E7E7;
     --text-dark: #002914;
-
 }
 
-h1, h2, h3,h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Gowun Dodum', sans-serif;
-  }
-
-body, p{
-    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
-*{
+body, p {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: start;
 }
 
 nav {
     background-color: var(--main-background-color);
     color: var(--main-text-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-nav a{
-    color: inherit;
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-a, 
-nav a,
-nav a:visited,
-a:visited {
-    /* display: block; */
-    padding: 20px;
+a, a:visited {
     color: inherit;
     line-height: 1.5rem;
+    text-decoration: none;
+}
+
+main {
+    grid-column: 2 / 3;
 }
 
 h1 {
     color: #247;
-
+    border-bottom: 1px dotted #070303;
+    margin-bottom: 1rem;
 }
 
 main img {
@@ -62,55 +79,56 @@ main img {
 p {
     padding: 10px;
     text-align: justify;
-    margin: 10px;
+    margin: 10px 0;
 }
 
-main {
-    max-width: 600px;
-}
-
-aside { 
+aside {
     text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     position: relative;
 }
 
 aside img {
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     height: auto;
-    margin-left: 10px;
+    margin: 1rem auto;
 }
 
 aside h2 {
     position: absolute;
-    left:50%;
-    transform: translateX(-50);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer {
     text-align: center;
     margin-top: 50px;
-    border-top: #070303 dotted;
-    width: 600px;
+    border-top: 1px dotted #070303;
+    padding: 1rem 0;
 }
 
-header {
-    width: 48vw;
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 li {
     margin-left: 1rem;
 }
 
+li a {
+    color: var(--text-light);
+}
 
-/*Class Selectors*/
-
+/* Utility Classes */
 .box {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #070303;
-    background-color: var(--main-background-color); 
+    background-color: var(--main-background-color);
     color: var(--main-text-color);
-    width: 47vw;
 }
 
 .indent {
