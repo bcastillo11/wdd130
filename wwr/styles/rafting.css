@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: #335CD7;
+    --primary-color: #247;
     --secondary-color: #002914;
     --accent1-color: #88D18A;
     --accent2-color: #F9E7E7;
@@ -35,6 +35,7 @@ header, main, footer {
 header {
     background-color: var(--primary-color);
     color: var(--text-on-dark-bg);
+    opacity: 95%;
 }
 
 header a {
