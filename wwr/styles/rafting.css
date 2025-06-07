@@ -312,9 +312,6 @@ input[type="checkbox"] {
 .fmi-contentm{
     grid-area: 1/4/2/5;
     align-self: start;
-    width: 600px;
-    height: 450px;
-    border: none;
 }
 
 .company-info{
