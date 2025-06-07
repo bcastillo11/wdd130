@@ -44,7 +44,7 @@ header a {
 }
 
 h1 {
-    width: 80%;
+    width: 60%;
     padding: 16px;
     top: 20px;
     text-align: center;
@@ -52,6 +52,7 @@ h1 {
     color: var(--accent2-color);
     opacity: 95%;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .hero h1 {
@@ -149,7 +150,7 @@ h2 {
 }
 
 .imagesrow figure{
-    /* padding: 7px; */
+    padding: 7px;
     background-color: #fff;
     border-radius: 5px;
 }
