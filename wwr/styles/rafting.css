@@ -261,8 +261,17 @@ textarea {
     font-size: 0.9rem; 
     height: 120px;     
     padding: 8px;      
-    /* resize: vertical;   */
     line-height: 1.4;  
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+.checkbox{
+    display: inline-flex;
+    margin-top: 20px;
+    flex-direction: row-reverse;
 }
 
 /* Form styling end */
