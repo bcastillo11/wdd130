@@ -159,7 +159,6 @@ h2 {
 Next two classes are an attempt to correct the contact img row */
 .about-img-height img{
     max-height: 95%;
-    max-width: auto;
 }   
 
 .about-img-height figure{
@@ -294,7 +293,6 @@ input[type="checkbox"] {
     grid-area: 2/4/3/5;
     align-self: start;
     border: 0;
-    padding: auto;
     margin: 0 auto;
     background-color: var(--accent1-color);
     align-items: center;
