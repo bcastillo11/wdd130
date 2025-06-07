@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #247;
     --secondary-color: #002914;
@@ -22,68 +21,24 @@ html, body {
     overflow-x: hidden;
 }
 
-h1, h2 {
-    font-family: var(--header-font);
-    color: var(--text-on-bright-bg);
-}
-
 header, main, footer {
     width: 100%;
     margin: 0 auto;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--text-on-dark-bg);
-    opacity: 95%;
-}
-
-header a {
-    color: inherit;
-    display: inline-block;
-    margin: 0 10px;
+h1, h2 {
+    font-family: var(--header-font);
+    color: var(--text-on-bright-bg);
+    text-align: center;
 }
 
 h1 {
     width: 80%;
     padding: 16px;
-    top: 20px;
-    text-align: center;
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     opacity: 0.85;
     margin: 0 auto;
-}
-
-.hero h1 {
-    position: absolute;
-    box-sizing: border-box;
-    left: 20px;
-    right: 20px;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero article {
-    position: absolute;
-    top: 90px;
-    left: 20px;
-    right: 20px;
-    background-color: var(--accent2-color);
-    opacity: 0.75;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
 }
 
 nav, section, article, p {
@@ -91,125 +46,17 @@ nav, section, article, p {
     margin: 16px;
 }
 
-.socialmedia {
-    margin: 0;
-}
-
-.socialmedia a {
-    margin: 0 10px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.socialmedia img:hover {
-    transform: scale(1.1);
-}
-
-footer {
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    margin: 15px 0 0;
-}
-
-.imagesrow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-    background-color: var(--accent1-color);
-    text-align: center;
-    border-radius: 7px;
-}
-
-.imagesrow figcaption {
-    margin-top: 0.5rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
-
-.imagesrow img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    border-radius: 6px;
-    object-fit: cover; /* opcional */
-}
-
-.imagesrow figure{
-    /* padding: 7px; */
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-/* Was having troubles with the grid rows height, since the grid was first made thinking of horizontal images
-Next two classes are an attempt to correct the contact img row */
-.about-img-height img{
-    max-height: 95%;
-    max-width: auto;
-}   
-
-.about-img-height figure{
-    height: 100%;
-    padding: 10px 5px;
-}
-
-/* Form styling */
-
-form{
-    width: 40%; /* TEMPORARY | REMOVE LATER after applying the grid to the section containg the form and the Google maps*/
-    background-color: #d5d5d5;
-    border-radius: 7px;
-    padding: 15px;
-}
-
-fieldset{
-    padding: 10px;
-    border-radius: 5px;
-}
-
-legend{
-    text-align: center;
-    color: #247;
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-label, 
-input,
-select,
-button,
-textarea{
+label, input, select, button, textarea {
     font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-    padding: 0 10px;  
-    width: 100%;  
+    width: 100%;
 }
 
-label{
-    text-align: right;
-    padding-right: 1rem;
-}
-
-
-input,
-textarea{
+input, textarea {
     font-size: 1.2rem;
     padding: 5px;
 }
 
-button{
+button {
     background-color: #249;
     color: #fff;
     padding: 15px;
@@ -220,51 +67,18 @@ button{
     grid-column: 2;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.05);
-    background-color: navy; 
+    background-color: navy;
 }
 
-.form-item{
-    display: grid;
-    align-items: center;
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-align: center;
 }
 
-.column1{
-    grid-template-columns: 1fr 3fr;
-    margin: 0.1rem 0;
-}
-
-.radio-style {
-    gap: 1rem;
-    flex-wrap: nowrap;
-    margin-bottom: 10px;
-}
-
-.radio-style label {
-    display: inline-flex; /* This line is the key to aligning each radio button with its corresponging text. The grid was not to be applied to the  whole div, but to each radio button was more efficient in this case. */
-    gap: 0.3rem;
-}
-
-input[type="radio"] {
-    width: auto;
-}
-
-.message label{
-    text-align: left;
-    margin-top: 30px;
-}
-
-textarea {
-    font-size: 0.9rem; 
-    height: 120px;     
-    padding: 8px;      
-    /* resize: vertical;   */
-    line-height: 1.4;  
-}
-
-/* Form styling end */
-
+/* Shared or multipage styles */
 .navigation {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -310,6 +124,223 @@ textarea {
     transform: scale(1.05);
 }
 
+.socialmedia {
+    margin: 0;
+}
+
+.socialmedia a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.foot p {
+    grid-column: 2/3;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot nav {
+    grid-column: 3/4;
+}
+
+/* Contact page specific */
+.imagesrow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    text-align: center;
+    border-radius: 7px;
+}
+
+.imagesrow figcaption {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.imagesrow img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.imagesrow figure {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.about-img-height img {
+    max-height: 95%;
+    max-width: auto;
+}
+
+.about-img-height figure {
+    height: 100%;
+    padding: 10px 5px;
+}
+
+form {
+    background-color: #d5d5d5;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+fieldset {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    text-align: center;
+    color: #247;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr 3fr;
+    margin: 0.1rem 0;
+}
+
+.radio-style {
+    gap: 1rem;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.radio-style label {
+    display: inline-flex;
+    gap: 0.3rem;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.message label {
+    text-align: left;
+    margin-top: 30px;
+}
+
+textarea {
+    font-size: 0.9rem;
+    height: 120px;
+    padding: 8px;
+    line-height: 1.4;
+}
+
+.fmi-format {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.fmi-contentf {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    align-self: start;
+}
+
+.fmi-contentm {
+    grid-area: 1/4/2/5;
+    align-self: start;
+}
+
+.fmi-contenti {
+    grid-area: 2/4/3/5;
+    align-self: start;
+    background-color: var(--accent1-color);
+    margin: 0 auto 15px;
+    border-radius: 8px;
+    padding: auto;
+    border: 0;
+    align-items: center;
+}
+
+.company-info {
+    display: flex;
+    align-content: center;
+}
+
+.company-info img {
+    width: 30px;
+    height: auto;
+    display: inline-block;
+}
+
+/* Misc */
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    opacity: 0.85;
+    padding: 16px;
+    width: max-content;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.hero article {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent2-color);
+    opacity: 0.75;
+    z-index: 1;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
 .history {
     background-color: var(--accent2-color);
     padding: 10px;
@@ -327,17 +358,7 @@ textarea {
     grid-row: 1/2;
 }
 
-.foot {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.foot p {
-    grid-column: 2/3;
-    align-items: center;
-    justify-content: center;
-}
-
-.foot nav {
-    grid-column: 3/4;
+.wireframe-link{
+    padding: 0;
+    background-color: white;
 }
