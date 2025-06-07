@@ -45,15 +45,21 @@ header a {
 }
 
 h1 {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
+    width: 80%;
     padding: 16px;
     top: 20px;
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     opacity: 0.85;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    position: absolute;
+    box-sizing: border-box;
+    left: 20px;
+    right: 20px;
 }
 
 .hero {
@@ -115,7 +121,7 @@ h2 {
     text-align: center;
 }
 
-.adventureawaits {
+.imagesrow {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
@@ -124,13 +130,13 @@ h2 {
     text-align: center;
 }
 
-.adventureawaits figcaption {
+.imagesrow figcaption {
     margin-top: 0.5rem;
     font-weight: 600;
     color: var(--secondary-color);
 }
 
-.adventureawaits img {
+.imagesrow img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
