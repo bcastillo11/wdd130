@@ -29,7 +29,8 @@
     <main>
         <h1>Do not wait! <br>Contact US</h1>
 
-        <section class="imagesrow">
+        <h2>Meet our Team!</h2>
+        <section class="imagesrow about-img-height">
         <figure>
             <img src="images/carlos-lead-river-guide.webp" alt="Workers portrait">
             <figcaption>Carlos - Lead River Guide</figcaption>
@@ -44,7 +45,49 @@
         </figure>
         </section>
 
-        
+        <div>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="form-item column1">
+                        <label for="fullname" >Full name:</label>
+                        <input type="text" id="fullname" name="fullname"><br>
+                        </div><br>
+
+                        <div class="form-item column1">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br>
+                        </div><br>
+                        
+                        <p>Why are you contacting us?</p>
+                        <div class="form-item radio-style">
+                            <!-- <p>Why are you contacting us?</p> -->
+                            <label>
+                                <input type="radio" name="reason" value="general inquiry">General Inquiry
+                            </label> 
+                            <label>
+                                <input type="radio" name="reason" value="Reservation">Reservation Question
+                            </label>
+                            <label>
+                                <input type="radio" name="reason" value="Suggestion">Website Suggestion
+                            </label>
+                        </div>       
+
+                        <div class="form-item message">
+                            <label for="message">Let us know what you need:</label>
+                            <textarea name="message" id="message" placeholder="Write your message..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-item">
+                    <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+
+
+        </div>
 
     </main>
 
