@@ -439,8 +439,12 @@ input[type="checkbox"] {
     border-radius: 10px;
 }
 
+.call-to-action-box h2{
+    margin-bottom: 0.5rem;
+}
+
 .call-to-action-box img{
-    max-width: 400px;
+    max-width: 28rem;
     display: block;
     align-items: center;
 }
@@ -455,9 +459,55 @@ input[type="checkbox"] {
     text-decoration: none;
     display: block;
     justify-self: center;
+    margin-bottom: 0.5rem;
 }
 
 .call-to-action-box a:hover{
     transform: scale(1.05);
     background-color: navy; 
 }
+
+.more-info-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    background-color: var(--accent1-color);
+    margin-bottom: 10px;
+}
+
+.objective-box{
+    grid-column: 1/3;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+}
+
+.objective-box img{
+    max-width: 30rem;
+}
+
+.offers-box{
+    grid-column: 3/5;
+    justify-content: start;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+}
+
+.offers-box img{
+    max-width: 30rem;
+}
+
+.offers-box a{
+    background-color: #249;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    width: 10rem;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    justify-self: center;
+    margin-bottom: 0.5rem;
+}
+
