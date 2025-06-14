@@ -173,19 +173,10 @@ legend{
     margin-bottom: 20px;
 }
 
-label, 
-input,
-select,
-button,
-textarea{
-    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-    padding: 0 10px;  
-    width: 100%;  
-}
-
 label{
     text-align: right;
     padding-right: 1rem;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
 
@@ -193,6 +184,7 @@ input,
 textarea{
     font-size: 1.2rem;
     padding: 5px;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
 button{
@@ -204,6 +196,7 @@ button{
     margin-top: 10px;
     grid-template-columns: 1fr;
     grid-column: 2;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
 button:hover{
@@ -230,6 +223,8 @@ button:hover{
 .radio-style label {
     display: inline-flex; /* This line is the key to aligning each radio button with its corresponging text. The grid was not to be applied to the  whole div, but to each radio button was more efficient in this case. */
     gap: 0.3rem;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    padding: 0 10px;
 }
 
 input[type="radio"] {
@@ -245,7 +240,8 @@ textarea {
     font-size: 0.9rem; 
     height: 120px;     
     padding: 8px;      
-    line-height: 1.4;  
+    line-height: 1.4; 
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif; 
 }
 
 input[type="checkbox"] {
