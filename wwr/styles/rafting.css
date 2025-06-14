@@ -498,7 +498,7 @@ input[type="checkbox"] {
     max-width: 30rem;
 }
 
-.offers-box a{
+.call-to-action-button{
     background-color: #249;
     color: #fff;
     padding: 15px;
@@ -509,6 +509,11 @@ input[type="checkbox"] {
     display: block;
     justify-self: center;
     margin-bottom: 0.5rem;
+}
+
+.call-to-action-button:hover {
+    transform: scale(1.05);
+    background-color: navy; 
 }
 
 /* trips specific styling */
@@ -531,8 +536,48 @@ input[type="checkbox"] {
     align-self: self-start;
 }
 
-.table-box th, .table-box td {
-    border-bottom: 1px solid #000;
+/* ---------- Trips Table Styling ---------- */
+.trips-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  /* border: 1px solid var(--secondary-color); */
+  border-radius: 8px;
+  overflow: hidden;              /* para redondear bordes */
+  font-size: 0.95rem;
+}
+
+.trips-table caption {
+  caption-side: top;
+  /* background-color: var(--accent1-color); */
+  /* color: var(--secondary-color); */
+  font-weight: bold;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.trips-table thead {
+  color: var(--text-on-bright-bg);
+}
+
+.trips-table thead th {
+  /* color: var(--accent2-color); */
+  padding: 0.75rem 1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.trips-table td {
+  padding: 0.75rem 1rem;
+  vertical-align: top;
+  line-height: 1.2;
+  border-bottom: #000 inset;
+}
+
+.trips-table tbody td:first-child {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
 .main-raft-box {
@@ -542,7 +587,8 @@ input[type="checkbox"] {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: nowrap;
-
+    margin: 0;
+    margin-bottom: 1rem;
     background-color: var(--accent1-color);
 }
 
@@ -566,4 +612,27 @@ input[type="checkbox"] {
 
 .main-raft-box p{
     text-align: left;
+}
+
+.call-to-action-banner {
+    background-color: var(--accent2-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    margin: 3rem auto;
+    
+}
+
+.call-to-action-banner h2 {
+    color: var(--text-on-bright-bg);
+    font-weight:900;
+}
+
+.featured-rafts-h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: var(--accent1-color);
 }
