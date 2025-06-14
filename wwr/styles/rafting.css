@@ -26,11 +26,6 @@ h1, h2 {
     color: var(--text-on-bright-bg);
 }
 
-header, main, footer {
-    width: 100%;
-    margin: 0 auto;
-}
-
 header {
     background-color: var(--primary-color);
     color: var(--text-on-dark-bg);
@@ -154,17 +149,6 @@ h2 {
     padding: 7px;
     background-color: #fff;
     border-radius: 5px;
-}
-
-/* Was having troubles with the grid rows height, since the grid was first made thinking of horizontal images
-Next two classes are an attempt to correct the contact img row */
-.about-img-height img{
-    max-height: 95%;
-}   
-
-.about-img-height figure{
-    height: 100%;
-    padding: 10px 5px;
 }
 
 /* Form styling */
